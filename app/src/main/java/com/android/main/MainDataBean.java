@@ -4,7 +4,7 @@ import com.llj.baselib.IOTInterfaceId;
 
 public class MainDataBean {
 
-    @IOTInterfaceId("14770")
+    @IOTInterfaceId("22692")
     private Float data;
 
     public Float getData() {

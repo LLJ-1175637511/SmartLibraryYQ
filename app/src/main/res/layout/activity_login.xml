@@ -13,7 +13,7 @@
             android:layout_height="50dp"
             android:background="#49A3F5"
             android:gravity="center"
-            android:text="@string/app_name"
+            android:text="登 录"
             android:textColor="#ffffff"
             android:textSize="20sp"
             tools:ignore="MissingConstraints" />

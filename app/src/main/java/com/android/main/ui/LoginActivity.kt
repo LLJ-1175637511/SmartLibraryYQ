@@ -1,6 +1,7 @@
-package com.android.main
+package com.android.main.ui
 
 import android.Manifest
+import com.android.main.R
 import com.android.main.databinding.ActivityLoginBinding
 import com.llj.baselib.ui.IOTLoginActivity
 

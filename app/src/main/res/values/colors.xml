@@ -39,4 +39,5 @@
     <color name="grey_dark">#333232</color>
     <color name="grey">#272626</color>
     <color name="half_white">#80FFFFFF</color>
+    <color name="dialogBack">#E4E1E1</color>
 </resources>
