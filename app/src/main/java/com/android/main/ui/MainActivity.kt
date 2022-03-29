@@ -109,9 +109,9 @@ class MainActivity : IOTMainActivity<ActivityMainBinding>(), ReserveInterf {
     @SuppressLint("ResourceAsColor")
     private fun buildDialog() {
         val reserveBinding = DataBindingUtil.inflate<DialogSelectSureBinding>(
-            LayoutInflater.from(this),
+            layoutInflater,
             R.layout.dialog_select_sure,
-            (findViewById<View>(android.R.id.content) as ViewGroup).getChildAt(0) as ViewGroup,
+            null,
             false
         )
         reserveBinding.lifecycleOwner?.let { lifecycleOwner ->
