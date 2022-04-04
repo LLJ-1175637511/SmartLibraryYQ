@@ -2,16 +2,12 @@ package com.android.main.ui
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.lifecycleScope
-import com.android.main.MainDataBean
 import com.android.main.MainVM
 import com.android.main.R
 import com.android.main.ReserveInterf
@@ -23,7 +19,6 @@ import com.llj.baselib.save
 import com.llj.baselib.ui.IOTMainActivity
 import com.llj.baselib.utils.ToastUtils
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -90,7 +85,6 @@ class MainActivity : IOTMainActivity<ActivityMainBinding>(), ReserveInterf {
     }
 
     override fun realData(data: Any?) {
-        ToastUtils.toastShort("data:${(data as MainDataBean).toString()}")
         //如果检测坐到对应位置
         cancelReserve()
         vm.reserveNumber.postValue(vm.reserveNumber.value!! + 1)
